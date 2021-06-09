@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Encabezado-->
+    <header>
+        <h1>Índice de masa corporal</h1>
+        <hr>
+    </header>
+    <!--Contenido-->
+    <div>
+        <p>El sobrepeso puede causar la elevación de la concentración de colesterol total y de la presión arterial, y aumentar el riesgo de sufrir la enfermedad arterial coronaria. La obesidad aumenta las probabilidades de que se presenten otros factores de riesgo cardiovascular, en especial, presión arterial alta, colesterol elevado y diabetes.</p>
+        <a title="User:InvictaHOG, CC0, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Body_mass_index_chart-es.svg">
+            <img width="75%" alt="Body mass index chart-es" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Body_mass_index_chart-es.svg/512px-Body_mass_index_chart-es.svg.png">
+        </a>
+        <hr>
+        <h2>Cálculo de IMC</h2>
+        <img width="150" src="https://wikimedia.org/api/rest_v1/media/math/render/svg/1b9f4caa253a635dd7dbaabcb2f0e622d96055ba" alt="formula">
+        <p>El <b>índice de masa corporal (IMC)</b> es una razón matemática que asocia la masa [medida en <b>kilogramos</b>] y la talla [medida en <b>metros</b>] de un individuo.</p>
+        <h3>Calculadora IMC</h3>
+        <fieldset>
+            <label for="txtNombre">Nombre: </label>
+            <input type="text" name="txtNombre" id="txtNombre">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label for="txtEstatura">Estatura [cm]:</label>
+            <input type="number" min="140" max="235" name="txtEstatura" id="txtEstatura">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label for="txtPeso">Peso [kg]:</label>
+            <input type="number" min="40" max="250" name="txtPeso" id="txtPeso">
+            <!--Para vincula el boton con una funcion de JS se utiliza un atributo tipo evento-->
+            <button onclick="calcularIMC()">Calcular</button>
+            <p id="pResultado"></p>
+        </fieldset>
+        <hr>
+        <br>
+    </div>
+    <hr>
+    <!--Pie de pagina-->
+    <footer>
+        <br>
+        <script src="js/script-index.js"></script>
+        <a href="https://commons.wikimedia.org/wiki/File:Body_mass_index_chart-es.svg">User:InvictaHOG</a>, CC0, via Wikimedia Commons
+    </footer>
+</body>
+</html>
