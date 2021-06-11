@@ -7,7 +7,6 @@ function calcularIMC(){
     let strPeso = document.getElementById('txtPeso').value;
     //Conversion de los valores de String a Integer
     //let nombre = parseInt(strNombre);
-    
     let estatura = parseInt(strEstatura) *0.01;
     let peso = parseInt(strPeso);
     //Implementa el modelo matematico
