@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="setup()">
+    <h1>Envio de formulario con js</h1>
+    <div>
+        <!--GET, -->
+        <img id="imgMain">
+        <form id="myForm" >
+            <fieldset>
+                <div>
+                    <input type="hidden" name="txtHidden" id="txtHidden" value="nrc5227">
+                </div>
+                <br>
+                <div>
+                    <label for="txtNombre">Nombre: </label>
+                    <input type="text" minlength="2" name="txtNombre" id="txtNombre" required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </div>
+                <br>
+                <div>
+                    <label>Tipo de sangre</label>
+                    <select name="txtTipoSangre" id="txtTipoSangre">
+                        <option value="O+">O+</option>
+                        <option value="O-">O-</option>
+                        <option value="A+">A+</option>
+                        <option value="A-">A-</option>
+                        <option value="B+">B+</option>
+                        <option value="B-">B-</option>
+                        <option value="AB+">AB+</option>
+                        <option value="AB-">AB-</option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <label for="txtNacimiento">Fecha de nacimiento: </label>
+                    <input type="date" name="txtNacimiento" id="txtNacimiento">
+                </div>
+                <br>
+                <div>
+                    <label for="txtsexo">Sexo: </label>
+                    <label>Mujer</label><input type="radio" name="txtsexo" id="txtsexo" value="Mujer">
+                    <label>Hombre</label><input type="radio" name="txtsexo" id="txtsexo" value="Hombre">
+                </div>
+                <br>
+                <div>
+                    <label>Dolencias:</label><br>
+                    <label>Hipertencion</label><input type="checkbox" name="txtHipertencion" id="txtHipertencion">
+                    <label>biabetes</label><input type="checkbox" name="txtDiabetes" id="txtDiabetes">
+                </div>
+                <br>
+                <div>
+                    <label for="txtEstatura">Estatura [cm]:</label>
+                    <input type="number" min="140" max="235" name="txtEstatura" id="txtEstatura" required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </div>
+                <br>
+                <div>
+                    <label for="txtPeso">Peso [kg]:</label>
+                    <input type="number" min="40" max="250" name="txtPeso" id="txtPeso" required>
+                </div>
+                <br>
+                <div>
+                    <label for="txtDireccion">Direccion:</label><br>
+                    <textarea name="txtDireccion" id="txtDireccion" cols="10" rows="2"></textarea>
+                </div>
+                <br>
+                <div>
+                    <button onclick="cancel()">Cancelar</button>
+                    <button onclick="send()">Enviar</button>
+                </div>
+                <!--Para vincula el boton con una funcion de JS se utiliza un atributo tipo evento-->
+                
+            </fieldset>
+        </form>
+        
+
+        <p>El sobrepeso puede causar la elevación de la concentración de colesterol total y de la presión arterial, y aumentar el riesgo de sufrir la enfermedad arterial coronaria. La obesidad aumenta las probabilidades de que se presenten otros factores de riesgo cardiovascular, en especial, presión arterial alta, colesterol elevado y diabetes.</p>
+        <a title="User:InvictaHOG, CC0, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Body_mass_index_chart-es.svg">
+            <img width="25%" alt="Body mass index chart-es" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Body_mass_index_chart-es.svg/512px-Body_mass_index_chart-es.svg.png">
+        </a>
+        <hr>
+        <h2>Cálculo de IMC</h2>
+        <img width="150" src="https://wikimedia.org/api/rest_v1/media/math/render/svg/1b9f4caa253a635dd7dbaabcb2f0e622d96055ba" alt="formula">
+        <p>El <b>índice de masa corporal (IMC)</b> es una razón matemática que asocia la masa [medida en <b>kilogramos</b>] y la talla [medida en <b>metros</b>] de un individuo.</p>
+        
+        <h3>Formulario en HTML <b>form</b> </h3>
+        <p>Sirve para ingresar un conjunto de datos a tra ves de controles de INPUTs y <b>enviar </b>o <b>SUBMIT</b> el formulario a backend.</p>
+        <p>EL formulario realiza un envio de datos hacia el servicio a través de atributo <b>action</b>.</p>
+        
+        <p>La navegacion de un sitio web se puede hacer a traves de hipervinculos y a través de envios de formularios</p>
+        <p>El atributo <b>action</b> determina el destino del formulario, que puede ser otra pagina, la misma pagina o el envio al backend.</p>
+        <hr>
+        <br>
+    </div>
+    <footer>
+        <script src="js/formulario_js.js"></script>
+    </footer>
+
+
+</body>
+</html>
